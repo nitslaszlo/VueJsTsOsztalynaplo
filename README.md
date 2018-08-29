@@ -1,6 +1,7 @@
 # Vue.js TypeScript Osztálynapló
 
-forrás: Dósa Bálint: https://github.com/dosabalint/webfejleszto-vue-01-01
+Forrás: Dósa Bálint: https://github.com/dosabalint/webfejleszto-vue-01-01
+Fejlesztői környezet beállítása: https://github.com/nitslaszlo/JedlikVueJsStarter
 
 ## Project setup
 ```
