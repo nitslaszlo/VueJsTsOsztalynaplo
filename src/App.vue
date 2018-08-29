@@ -40,13 +40,15 @@ class Student {
   gender: string = "";
 }
 
+class StudentStyle {
+  color: string = "white";
+  backgroundColor: string = "gray";
+}
+
 @Component
 export default class App extends Vue {
   private pageTitle: string = "Osztálynapló";
-  private studentStyle = {
-    color: "white",
-    backgroundColor: "gray"
-  };
+  private studentStyle = new StudentStyle();
   private newStudent = new Student();
   private studentCollection: Student[] = [
     {
@@ -91,12 +93,11 @@ export default class App extends Vue {
     this.newStudent = new Student();
   }
 
-  private GetColor(student: Student): any {
-    let backgroundColor = student.gender == "fiú" ? "blue" : "red";
-    return {
-      color: "white",
-      backgroundColor: backgroundColor
-    };
+  private GetColor(student: Student): StudentStyle {
+    let newStyle: StudentStyle = new StudentStyle();
+    newStyle.color = "white";
+    newStyle.backgroundColor = student.gender == "fiú" ? "blue" : "red";
+    return newStyle;
   }
 }
 </script>
