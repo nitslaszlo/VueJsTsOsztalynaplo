@@ -48,8 +48,8 @@ class StudentStyle {
 @Component
 export default class App extends Vue {
   private pageTitle: string = "Osztálynapló";
-  private studentStyle = new StudentStyle();
-  private newStudent = new Student();
+  private studentStyle: StudentStyle = new StudentStyle();
+  private newStudent: Student = new Student();
   private studentCollection: Student[] = [
     {
       name: "Kata",
