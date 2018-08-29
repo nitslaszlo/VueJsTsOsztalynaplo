@@ -1,4 +1,6 @@
-# vuejs-ts-osztalynaplo
+# Vue.js TypeScript Osztálynapló
+
+forrás: Dósa Bálint: https://github.com/dosabalint/webfejleszto-vue-01-01
 
 ## Project setup
 ```
